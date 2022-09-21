@@ -10,7 +10,7 @@ import { UsersModule } from './users/users.module';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    MongooseModule.forRoot(process.env.DB_URL),
+    MongooseModule.forRoot(process.env.MONGODB_URL),
     UsersModule,
   ],
   controllers: [AppController],
